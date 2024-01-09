@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    <Panel
+        expandable="false"
+        expanded="true"
+    >
+        <Table
+            items="{to_Anexos}"
+            updateFinished=".onAttachUpdate"
+        >
+            <columns>
+                <Column
+                    hAlign="Center"
+                    vAlign="Middle"
+                />
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <VBox>
+                            <Image src="" width="350px"/>
+                            <Avatar
+                                src=""
+                                displaySize="XL"
+                                backgroundColor="Accent6"
+                                displayShape="Square"
+                                showBorder="true"
+                            />
+                        </VBox>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+</core:FragmentDefinition>
